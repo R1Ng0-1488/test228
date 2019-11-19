@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title%}zalupa{% endblock %}</title>
+	</head>
+	<body>
+		<h1>Hello there</h1>
+		{% for bb in bbs %}
+		<p>{{ bb.title }}</p>
+		<p>{{ bb.content }}</p>
+		{% endfor %}
+	</body>
+</html>
